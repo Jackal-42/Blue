@@ -1,0 +1,92 @@
+canvas{
+  /* border: 1px solid black; */
+  position: fixed;
+  text-emphasis-color: rgb(59, 0, 59);
+}
+
+#background{
+  filter: blur(0px);
+}
+h2 {
+  text-align: center;
+  width: 100%;
+  margin: 4px;
+}
+
+p {
+  text-align: center;
+  margin: 2px;
+}
+
+.objectButton {
+  left: 0px;
+  margin: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 20px;
+  border: none;
+  background: linear-gradient(rgb(118, 118, 118), gray);
+}
+
+.objectButtonDeleteMode {
+  margin: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 20px;
+  border: none;
+  background: linear-gradient(darkred, red);
+}
+
+.guiButton {
+  margin: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 20px;
+  border: none;
+  background: rgb(42, 42, 42);
+  color: white;
+}
+
+.objectButton:focus {
+  background: linear-gradient(lightgray, darkgray);
+  outline: none;
+}
+
+ul{
+  position: absolute;
+  top: 300px;
+  right: 8px;
+  float: right;
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -40px;
+  width: 300px;
+  height: 200px;
+  overflow: scroll;
+}
+
+#objectPropertiesMenu{
+  float: right;
+  margin: 0px;
+  width: 300px;
+  height: 300px;
+  overflow: scroll;
+  background: lightgray;
+}
+
+input {
+  width: 50px;
+}
+
+
+#addObjectDiv {
+  background: rgb(42, 42, 42);
+}
+
+textarea {
+  resize: none;
+}
+
+body{
+  background: gray;
+}

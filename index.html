@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Blue</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <canvas id="GUI" style="z-index: 2;" onclick='checkForMouseSelect(event)'></canvas>
+    <canvas id="foreground" style="z-index: 1;"></canvas>
+    <canvas id="canvas"></canvas>
+    <canvas id="background" style="z-index: -1;"></canvas>
+    <div id="objectPropertiesMenu"></div>
+    <ul id="gameEditList"></ul>
+    <audio id="audio" src="BlueInstrumental.mp3" loop="true"></audio>
+    <audio id="audioEgg" src="EasterEgg.mp3" loop="true"></audio>
+    <audio id="audioEgg2" src="EasterEgg2.mp3" loop="true"></audio>
+    <audio id="audioEgg3" src="Nyan Cat [original].mp3" loop="true"></audio>
+
+    <strong><span style='position: fixed; top: 6px; right: 6px; background: rgb(42, 42, 42); color: white; padding: 4px; width: 50px; box-shadow: 1px 1px 6px black;' id="momentumX"></span></strong>
+
+
+    <div style="position: fixed; left: 40%; right: 40%; top: 20%; bottom: 20%; box-shadow: 2px 2px 12px black;z-index: 99;" id="addObjectDiv">
+      <h1 style="color: white; text-align: center; width: 100%;">Add an Object</h1>
+      <button class="objectButton" onclick="addObject('ground')">Ground</button>
+      <button class="objectButton" onclick="addObject('fountain')">Fountain</button>
+      <button class="objectButton" onclick="addObject('barrier')">Disappearing Wall</button>
+      <button class="objectButton" onclick="addObject('antiBarrier')">Appearing Wall</button>
+      <button class="objectButton" onclick="addObject('button')">Button</button>
+      <button class="objectButton" onclick="addObject('holdButton')">Hold Button</button>
+      <button class="objectButton" onclick="addObject('stickyButton')">Sticky Button</button>
+      <button class="objectButton" onclick="addObject('box')">Box</button>
+      <button class="objectButton" onclick="addObject('portal')">Portal</button>
+      <button class="objectButton" onclick="addObject('rotatePlatform')">Slope</button>
+      <button class="objectButton" onclick="addObject('enemy')">Enemy</button>
+
+
+
+      <button style="position: absolute; bottom: 0; left: 0;" class="objectButton" onclick="addObject('none')">Cancel</button>
+    </div>
+
+    <div id='output' style="z-index: 90;">
+      <textarea id='outputBox' style="position: fixed; bottom: 10%; left: 10%; right: 10%; width: 80%; height: 80%;box-shadow: 4px 4px 18px black; z-index: 102;"></textarea>
+      <button style="position: fixed; bottom: 10%; left: 10%; right: 86%; width: 4%; z-index: 200;" onclick="document.getElementById('output').style.display = 'none'">Close</button>
+      <button id="importButton" style="position: fixed; bottom: 10%; left: 46%; right: 54%; width: 8%; z-index: 200;" onclick="importLevelData()">Import Data</button>
+    </div>
+    <span id="dataButtons" style="position: fixed; bottom: 2px; right: 2px; z-index: 100;"><button onclick="outputLevelData()">Export</button>
+    <button onclick="openImportPage()">Import</button></span>
+
+
+    <script src="levels.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
