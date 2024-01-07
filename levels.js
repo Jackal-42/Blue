@@ -51,7 +51,7 @@ function loadLevel(levelNum){
     background.push(new component(1000, 500, 'lightBlue', 0, 0, Infinity, 'rect'))
     background.push(new component(0, 0, 'lightgray', -300, 0, Infinity, 'clouds'));
     background.push(new component(0, 0, 'lightgray', -300, 0, Infinity, 'mountains'));
-    // objects.push(new component(20, 500, ['blue', 'purple'], 1000, 0, 'easterEgg2', 'loadZone'));
+    objects.push(new component(20, 500, ['blue', 'purple'], 1000, 0, 'easterEgg2', 'loadZone'));
   }
 
   if(levelNum == 3){
