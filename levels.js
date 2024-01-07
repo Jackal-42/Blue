@@ -30,7 +30,7 @@ function loadLevel(levelNum){
     objects.push(new component(20, 500, 'saddlebrown', 980, 0, Infinity, 'ground'));
     objects.push(new component(30, 50, 'blue', 900, 350, Infinity, 'fountain'));
     // objects.push(new component(1, 1, 'purple', 500, 400, Infinity, 'fountain'));
-    objects.push(new component(1, 1, ['blue', 'purple'], 22, 398, 'easterEgg1', 'loadZone'));
+    objects.push(new component(1, 1, ['blue', 'purple'], 22, 398, 'easterEgg2', 'loadZone'));
     background.push(new component(1000, 500, 'lightBlue', 0, 0, Infinity, 'rect'))
     background.push(new component(0, 0, 'lightgray', -300, 0, Infinity, 'clouds'));
     background.push(new component(0, 0, 'lightgray', -300, 0, Infinity, 'mountains'));
